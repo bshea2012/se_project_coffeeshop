@@ -1,0 +1,79 @@
+@keyframes pulsate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+
+.about {
+  background-color: #0a2850;
+  padding: 119px 80px 173px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  display: flex;
+}
+
+.about__title {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  margin: 0;
+  max-width: 251px;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.about__content {
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: auto;
+}
+
+.about__paragraph {
+  color: #fff;
+  z-index: 3;
+  margin: 0;
+  max-width: 660px;
+  font-size: 20px;
+  line-height: 30px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about__circle {
+  position: absolute;
+  top: -152px;
+  left: -129px;
+  width: 426px;
+  height: 426px;
+  background-color: #2f80ed;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.about__circle_animation_blurred {
+  position: absolute;
+  top: -152px;
+  left: -129px;
+  width: 426px;
+  height: 426px;
+  background-color: #2f80ed;
+  border-radius: 50%;
+  z-index: 1;
+  animation: pulsate 1.3s ease-in-out infinite;
+}
