@@ -43,14 +43,14 @@
         </nav>
         <h1 class="header__title">
           <span class="header__span-accent">Specialty coffee</span>
-          <br />in the Triple Peaks Library<br />
+          in the Triple Peaks Library
         </h1>
         <p class="header__description">
           Welcome to our study zone! We've got the cofee energize you and the
           cozy vibes to help you get creative.
         </p>
         <img
-          src="/images/inside_coffee_shop.png"
+          src="../se_project_coffeeshop/images/inside_coffee_shop.png"
           alt="Inside of Coffee Shop"
           class="header__image"
         />
@@ -110,6 +110,7 @@
                 id="name"
                 class="form__input"
                 placeholder="Name Surname"
+                required
               />
               <label class="form__label" for="guests">Number of guests *</label>
               <input
@@ -117,6 +118,7 @@
                 id="guests"
                 class="form__input"
                 placeholder="1-8"
+                required
               />
               <label class="form__label" for="date-time">Date & time *</label>
               <input type="datetime-local" id="date-time" class="form__input" />
@@ -126,6 +128,7 @@
                 id="email"
                 class="form__input"
                 placeholder="email@email.com"
+                required
               />
             </fieldset>
             <button class="form__button" type="submit">Book a table</button>
@@ -135,6 +138,7 @@
                 class="form__checkbox"
                 name="agree"
                 id="agree"
+                required
               />
               I agree with the terms of use
             </label>
@@ -242,26 +246,28 @@
         <section id="contacts" class="about">
           <h2 class="about__title">About the coffee shop</h2>
           <div class="about__content">
-            <ul class="about__paragraph">
-              <li>
+            <div>
+              <p class="about__paragraph">
                 Our coffee shop is located in the Triple Peaks Library. It
                 features 6 tables and free WiFi.
-              </li>
-              <li>Our main mission is keeping guests cozy and energized.</li>
-              <li>
+              </p>
+              <p class="about__paragraph">
+                Our main mission is keeping guests cozy and energized.
+              </p>
+              <p class="about__paragraph">
                 Besides that, we try to reduce our environmental impact — so we
                 don't sell single-use cups. But you can buy one of our reusable
                 cups!
-              </li>
-            </ul>
+              </p>
+            </div>
           </div>
           <div class="about__circle"></div>
-          <div class="about__circle_animation_blurred"></div>
+          <div class="about__circle about__circle_animation_blurred"></div>
         </section>
       </main>
 
       <footer class="footer">
-        <section class="footer__content">
+        <div class="footer__content">
           <img
             src="./images/logo_coffeeshop_light.svg"
             alt="Triple Peaks Coffee Logo"
@@ -290,7 +296,7 @@
               </li>
             </ul>
           </div>
-        </section>
+        </div>
         <p class="footer__coypright">@ 2024 Brogen Shea</p>
       </footer>
     </div>
