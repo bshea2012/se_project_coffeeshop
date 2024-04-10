@@ -46,6 +46,7 @@
   display: flex;
   align-items: center;
   column-gap: 10px;
+  transition: color ease 1s;
 }
 
 .footer__social-link:hover {

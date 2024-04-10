@@ -25,7 +25,7 @@
 .card__list-item {
   display: flex;
   list-style-type: none;
-  font-family: "Noto Serif", Arial, sans-serif;
+  font-family: "Noto Serif", "Times New Roman", serif;
 }
 
 .card__list-divider {
